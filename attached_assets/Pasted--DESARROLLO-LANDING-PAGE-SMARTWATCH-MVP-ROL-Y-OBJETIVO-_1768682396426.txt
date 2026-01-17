@@ -1,0 +1,65 @@
+# DESARROLLO LANDING PAGE SMARTWATCH - MVP
+
+## ROL Y OBJETIVO
+Eres desarrollador Senior Fullstack especializado en landing pages de ecommerce tecnológico. Objetivo: Crear landing page responsive, SEO-optimizada y conversiva para smartwatch con selector de colores de correa y compra directa por WhatsApp.
+
+## STACK TECNOLÓGICO
+- HTML5 semántico
+- CSS3 puro (Grid, Flexbox, Animaciones CSS, Variables)
+- JavaScript vanilla (módulos ES6)
+- Sin frameworks CSS/JS pesados
+- Despliegue: Netlify/Vercel
+
+## INSTRUCCIONES PASO A PASO
+
+### FASE 1: ESTRUCTURA BASE (Día 1)
+1. Crear estructura HTML5 con:
+   - Header fijo con logo (texto "Smartwatch Pro")
+   - Hero section con imagen principal
+   - Selector de 3 colores de correa (gris, verde, negro)
+   - Precio: 239.900 COP
+   - Stock: 100 unidades (mostrar dinámico)
+   - Botón "Comprar por WhatsApp"
+
+2. Secciones requeridas:
+   - Características principales (6-8 items con iconos)
+   - Ficha técnica en tabla
+   - Galería de imágenes (3-4 fotos)
+   - Términos de garantía (acordeón)
+   - Footer con datos contacto
+
+### FASE 2: ESTILO Y DISEÑO (Día 2)
+- Paleta de colores: Negro (#0a0a0a), Gris (#808080), Verde (#4CAF50), Azul tecnológico (#2196F3)
+- Efecto glassmorphism en header y cards
+- Animaciones CSS: fade-in al scroll, hover en botones
+- Mobile-first (breakpoints: 320px, 768px, 1024px)
+- Imágenes optimizadas (WebP + PNG fallback)
+
+### FASE 3: INTERACTIVIDAD (Día 3)
+- Selector de correas: Cambia imagen principal y actualiza stock
+- Botón WhatsApp: Abre con mensaje predefinido incluyendo color seleccionado
+- Contador de stock por color (inicial: 33,33,34)
+- Animaciones suaves con CSS transitions
+
+### FASE 4: OPTIMIZACIÓN (Día 4)
+- Meta tags SEO completos
+- Schema.org Product markup
+- Lazy loading imágenes
+- CSS/JS minificado
+- Puntuación Lighthouse >90
+
+## RESTRICCIONES ESTRICTAS
+NO usar Bootstrap, Tailwind, React, Vue o cualquier framework.
+NO modificar estructura de precios ni stock inicial.
+NO añadir pasos extra de checkout (solo WhatsApp directo).
+SÍ mantener selector de 3 colores exactos.
+SÍ hacer responsive en todos dispositivos.
+SÍ usar animaciones CSS nativas.
+
+## PLANIFICACIÓN APROBADA
+1. Crear index.html con estructura semántica
+2. style.css con diseño responsive
+3. app.js para interactividad básica
+4. Optimizar y desplegar
+
+¿Comenzamos con Fase 1? Responde SÍ para proceder con código HTML base.

@@ -1,0 +1,89 @@
+{
+  "producto": {
+    "nombre": "Reloj Inteligente Smartwatch Llamadas",
+    "slug": "smartwatch-llamadas-bluetooth",
+    "precio": 239900,
+    "moneda": "COP",
+    "stock_total": 100,
+    "ubicacion": "Bogotá, Colombia",
+    "colores_correa": [
+      {
+        "nombre": "gris",
+        "codigo_hex": "#808080",
+        "stock": 33,
+        "disponible": true
+      },
+      {
+        "nombre": "verde",
+        "codigo_hex": "#4CAF50",
+        "stock": 33,
+        "disponible": true
+      },
+      {
+        "nombre": "negro",
+        "codigo_hex": "#0a0a0a",
+        "stock": 34,
+        "disponible": true
+      }
+    ],
+    "especificaciones": {
+      "pantalla": "AMOLED 1.43\" HD",
+      "resistencia_agua": "Lavado de manos, no sumergible",
+      "conexion": "Bluetooth 5.0 (Android/iOS)",
+      "bateria": "410mAh",
+      "sensores": ["Ritmo cardíaco", "Oxígeno en sangre", "Presión arterial", "Sueño"],
+      "funcionalidades": ["Llamadas Bluetooth", "Notificaciones", "Modos deportivos", "NFC", "Control música"],
+      "dimensiones": {
+        "correa": "24 cm",
+        "esfera_diametro": "4.9 cm",
+        "esfera_grosor": "1 cm",
+        "total": "25 cm"
+      },
+      "material": "Correa de goma silicona"
+    },
+    "contenido_caja": [
+      "Reloj inteligente",
+      "Cable de carga magnético",
+      "Correa gris (instalada)",
+      "Correa verde extra",
+      "Correa negra extra",
+      "Manual de usuario"
+    ],
+    "garantia": {
+      "tipo": "Defectos de fábrica",
+      "periodo": "5 días después de recibir",
+      "condiciones": "Producto sin usar, empaque original completo, reporte dentro de 5 días"
+    }
+  },
+  "sitio": {
+    "meta": {
+      "title": "Smartwatch con Llamadas | Monitoreo de Salud | Envío Bogotá",
+      "description": "Reloj inteligente con Bluetooth, medición de oxígeno, presión arterial, 3 correas de colores. Stock limitado. ¡Compra ahora!",
+      "keywords": "smartwatch, reloj inteligente, llamadas bluetooth, oxígeno en sangre, deportes, colombia, bogota"
+    },
+    "contacto": {
+      "whatsapp": {
+        "numero": "573001234567",
+        "mensaje": "Hola, quiero comprar el Smartwatch Llamadas, color: [COLOR], precio: $239.900"
+      },
+      "ubicacion": "Bodega en Bogotá, Colombia"
+    },
+    "diseno": {
+      "colores": {
+        "primario": "#0a0a0a",
+        "secundario": "#2196F3",
+        "acento": "#4CAF50",
+        "fondo": "#f8f9fa",
+        "texto": "#333333"
+      },
+      "animaciones": ["fade-in", "slide-up", "hover-scale"],
+      "efectos": ["glassmorphism", "box-shadow", "border-radius"]
+    },
+    "seo": {
+      "schema_type": "Product",
+      "opengraph": true,
+      "twitter_cards": true,
+      "canonical": "https://smartwatch.com.co/"
+    }
+  }
+}
