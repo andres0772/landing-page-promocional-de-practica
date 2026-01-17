@@ -1,4 +1,4 @@
-# 🚀 Smartwatch Landing Page - Promotional Experience
+# 🚀 Smartwatch Landing Page - Proyecto de Práctica
 
 <div align="center">
 
@@ -11,7 +11,7 @@
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-10B981?style=for-the-badge)](https://your-vercel-url.vercel.app)
 [![GitHub License](https://img.shields.io/github/license/andres0772/landing-page-promocional-de-practica?style=for-the-badge)](LICENSE)
 
-*Una experiencia de landing page moderna y atractiva para el lanzamiento de un smartwatch de última generación*
+*Landing page moderna desarrollada como proyecto personal de práctica para aprender y experimentar con las últimas tecnologías web*
 
 </div>
 
@@ -24,24 +24,28 @@
 - [📦 Installation](#-installation)
 - [💻 Usage](#-usage)
 - [🌐 Deployment](#-deployment)
-- [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 - [📞 Contact](#-contact)
 
 ## 🎯 About the Project
 
-Esta landing page promocional fue diseñada para presentar el nuevo Smartwatch con características de vanguardia. El proyecto combina un diseño visual impactante con una experiencia de usuario fluida para captar la atención de los clientes potenciales y destacar las características únicas del producto.
+Esta landing page es un proyecto personal de práctica creado con el objetivo de aprender y experimentar con las tecnologías web más modernas. El proyecto simula la página de promoción de un smartwatch, permitiendo explorar conceptos de diseño responsive, animaciones fluidas y mejores prácticas de desarrollo.
 
 ### 🎨 Motivation
 
-El proyecto nace de la necesidad de crear una presencia digital impactante para el lanzamiento de un producto tecnológico innovador. Queríamos ir más allá de una simple página de productos y crear una experiencia inmersiva que refleje la calidad y el diseño del smartwatch.
+El proyecto fue desarrollado como ejercicio práctico para:
+- Aprender React 19 con las últimas features
+- Experimentar con TypeScript en un proyecto real
+- Practicar diseño responsive con TailwindCSS
+- Implementar animaciones con Framer Motion
+- Aprender deployment automático con Vercel
 
-### 🎯 Problem Solved
+### 🎯 Objetivos de Aprendizaje
 
-- **Presentación atractiva**: Transforma especificaciones técnicas en una experiencia visual atractiva
-- **Conversión optimizada**: Diseñada para guiar al usuario hacia la compra con CTAs estratégicos
-- **Responsive perfecta**: Experiencia impecable en todos los dispositivos
-- **Performance optimizada**: Tiempos de carga mínimos para máxima retención
+- **Frontend Moderno**: Dominar React, TypeScript y herramientas modernas
+- **Diseño Responsive**: Crear experiencias perfectas en todos los dispositivos
+- **Performance**: Optimizar tiempos de carga y用户体验
+- **Deployment**: Automatizar el proceso de deploy a producción
 
 ## ✨ Features
 
@@ -276,22 +280,6 @@ npm i -g vercel
 vercel --prod
 ```
 
-## 🤝 Contributing
-
-¡Contribuciones son bienvenidas! Por favor sigue estos pasos:
-
-1. **Fork** el proyecto
-2. Crea tu feature branch (`git checkout -b feature/AmazingFeature`)
-3. **Commit** tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** al branch (`git push origin feature/AmazingFeature`)
-5. Abre un **Pull Request**
-
-### 📝 Guidelines
-- Seguir el código style existente
-- Añadir tests para nuevas features
-- Actualizar la documentación
-- Respetar las convenciones de commit
-
 ## 📄 License
 
 Este proyecto está bajo la Licencia MIT. Mirá el archivo [LICENSE](LICENSE) para más detalles.
@@ -306,7 +294,7 @@ Este proyecto está bajo la Licencia MIT. Mirá el archivo [LICENSE](LICENSE) pa
 
 <div align="center">
 
-**⭐ Dale estrella si te gustó el proyecto!**
+**⭐ Proyecto personal de práctica para aprender desarrollo web moderno**
 
 Hecho con ❤️ y ☕ en Buenos Aires
 

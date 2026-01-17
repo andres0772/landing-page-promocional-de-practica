@@ -98,3 +98,12 @@ temp/
 # Vite config temporary files
 vite.config.ts.*
 *.tar.gz
+
+# Node.js binaries (descargados manualmente)
+node-*/
+
+# Local state y data
+.local/
+
+# Replit configuration
+.replit
