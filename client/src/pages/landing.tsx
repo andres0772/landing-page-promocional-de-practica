@@ -13,15 +13,14 @@ import {
   ShieldCheck,
   Truck
 } from "lucide-react";
-import { 
-  Accordion, 
-  AccordionContent, 
-  AccordionItem, 
-  AccordionTrigger 
-} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import FAQSection from "@/components/FAQSection";
+import { FAQ_DATA } from "@/data/faq";
+import { useScrollAnimation, useParallax } from "@/hooks/useScrollAnimation";
+import { ANIMATION_PRESETS } from "@/types/landing";
+import Chatbot from "@/components/Chatbot";
 
 // Assets
 import imgGrey from "@assets/generated_images/smartwatch_with_grey_strap.png";
@@ -74,6 +73,13 @@ export default function LandingPage() {
   });
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Custom hooks for animations
+  const heroRef = useScrollAnimation<HTMLDivElement>({ threshold: 0.1, delay: 200 });
+  const featuresRef = useScrollAnimation<HTMLDivElement>({ threshold: 0.1, delay: 300 });
+  const specsRef = useScrollAnimation<HTMLDivElement>({ threshold: 0.1, delay: 400 });
+  const galleryRef = useScrollAnimation<HTMLDivElement>({ threshold: 0.1, delay: 500 });
+  const { ref: parallaxRef, transform: parallaxTransform } = useParallax<HTMLDivElement>(0.3);
 
   // Scroll effect for header
   useEffect(() => {
@@ -146,16 +152,26 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-        {/* Background Gradients */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-brand-blue/20 rounded-full blur-[120px] -z-10 opacity-30 pointer-events-none" />
-        <div className="absolute bottom-0 right-0 w-[800px] h-[600px] bg-brand-green/10 rounded-full blur-[120px] -z-10 opacity-20 pointer-events-none" />
+      <section 
+        ref={heroRef.ref}
+        className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden"
+      >
+        {/* Background Gradients with parallax */}
+        <div 
+          ref={parallaxRef}
+            className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-brand-blue/20 rounded-full blur-[120px] -z-10 opacity-30 pointer-events-none" 
+          style={{ transform: parallaxTransform }}
+        />
+        <div 
+          className="absolute bottom-0 right-0 w-[800px] h-[600px] bg-brand-green/10 rounded-full blur-[120px] -z-10 opacity-20 pointer-events-none" 
+          style={{ transform: `translateY(${parseInt(parallaxTransform.replace(/[^\d-]/g, '') || '0') * 0.5}px)` }}
+        />
 
         <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={ANIMATION_PRESETS.fadeInLeft.hidden}
+            animate={heroRef.isVisible ? ANIMATION_PRESETS.fadeInLeft.visible : ANIMATION_PRESETS.fadeInLeft.hidden}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="space-y-8"
           >
@@ -334,35 +350,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Warranty & Footer */}
-      <section className="py-24 bg-gradient-to-b from-black to-brand-blue/5">
-        <div className="container mx-auto px-4 max-w-3xl text-center mb-20">
-          <ShieldCheck className="w-16 h-16 text-brand-blue mx-auto mb-6" />
-          <h2 className="text-3xl font-bold mb-4">Garantía y Confianza</h2>
-          <p className="text-gray-400 mb-8">Comprando con nosotros obtienes respaldo total.</p>
-          
-          <Accordion type="single" collapsible className="w-full text-left bg-white/5 rounded-xl border border-white/10 px-4">
-            <AccordionItem value="item-1" className="border-white/10">
-              <AccordionTrigger className="hover:no-underline">¿Qué cubre la garantía?</AccordionTrigger>
-              <AccordionContent className="text-gray-400">
-                Cubrimos cualquier defecto de fábrica en el funcionamiento del reloj, sensores o pantalla durante 12 meses.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-2" className="border-white/10">
-              <AccordionTrigger className="hover:no-underline">¿Tiempos de envío?</AccordionTrigger>
-              <AccordionContent className="text-gray-400">
-                Envíos a Bogotá en 24 horas. Resto del país 2-3 días hábiles.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3" className="border-transparent">
-              <AccordionTrigger className="hover:no-underline">¿Métodos de pago?</AccordionTrigger>
-              <AccordionContent className="text-gray-400">
-                Pago contra entrega, Nequi, Daviplata y Transferencia Bancaria.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <FAQSection data={FAQ_DATA} />
 
       <footer className="bg-black py-12 border-t border-white/10">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
@@ -380,6 +369,9 @@ export default function LandingPage() {
           </div>
         </div>
       </footer>
+
+      {/* Chatbot */}
+      <Chatbot />
     </div>
   );
 }
