@@ -8,7 +8,7 @@
 ![Vite](https://img.shields.io/badge/Vite-7.1.9-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.1.14-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-10B981?style=for-the-badge)](https://your-vercel-url.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-10B981?style=for-the-badge)](https://smartwatch-landing-page-omega.vercel.app)
 [![GitHub License](https://img.shields.io/github/license/andres0772/landing-page-promocional-de-practica?style=for-the-badge)](LICENSE)
 
 *Landing page moderna desarrollada como proyecto personal de práctica para aprender y experimentar con las últimas tecnologías web*
